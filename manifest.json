@@ -1,0 +1,26 @@
+{
+  "name": "MyCourses hover on top",
+  "description": "Forces the popup menu on MyCourses to stay on top",
+  "version": "0.2",
+  "manifest_version": 2,
+  "content_scripts": [{
+    "matches": [
+      "https://mycourses.aalto.fi/*"
+    ],
+    "js": [
+      "content.js"
+    ]
+  }],
+  "browser_action": {
+    "default_icon": {
+      "16": "icons/icon_16.png",
+      "32": "icons/icon_32.png",
+      "48": "icons/icon_48.png",
+      "64": "icons/icon_64.png",
+      "128": "icons/icon_128.png"
+    }
+  },
+  "web_accessible_resources": [
+    "main.js"
+  ]
+}
